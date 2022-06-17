@@ -7,6 +7,9 @@ module.exports = {
         filename: "time-picker.js",
         path: path.resolve(__dirname, "./dist"),
     },
+    optimization: {
+        minimize: false;
+    }
     module: {
         rules: [
             {
