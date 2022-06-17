@@ -552,6 +552,7 @@ var __webpack_exports__ = {};
 // }
 //
 // returns the newly created element
+console.log("dom-utils imported");
 function dom_utils_createHtmlElement(elementObject){
     //Must at least have a tag.
     if (typeof elementObject.tag !== 'string'){
