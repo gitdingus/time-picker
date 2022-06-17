@@ -378,4 +378,5 @@ const createTimePicker = function (){
 
 };
 
+console.log("End of time-picker.js execution");
 export { createTimePicker };
