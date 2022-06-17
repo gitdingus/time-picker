@@ -3,6 +3,16 @@ import './time-picker.css';
 import './chevron-down.png';
 import './chevron-up.png';
 
+
+console.log("Executed from time-picker.js");
+document.querySelector("body").appendChild(
+    createHtmlElement({
+        tag: "p",
+        properties: {
+            textContent: "Hello From time-picker.js",
+        }
+    })
+);
 const TimePickerObject = function (){
     let hour = 0;
     let minute = 0;
