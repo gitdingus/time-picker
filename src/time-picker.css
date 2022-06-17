@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.tick-tock{
+    width: 200px;
+}
+.time-picker{
+    display: grid;
+    grid-template-columns: 1fr 5px 1fr 1fr;
+
+    justify-items: center;
+    align-items: center;
+
+    padding: 5px;
+
+    border: 3px solid lightgray;
+    border-radius: 10px;
+
+    font-family: "Roboto Mono";
+    color: rgb(97, 119, 119);
+
+}
+
+.time-picker img{
+    opacity: .3;
+}
+
+.time-picker .picker {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+    justify-items: center;
+    align-items: center;
+}
+
+.time-picker .picker div{
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.picker.focused div{
+    background-color: lightgray;
+}
+
+.time-picker .arrow{
+    display: none; 
+}
+
+.time-picker .arrow.active{
+    display: block;
+}
