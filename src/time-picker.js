@@ -1,7 +1,7 @@
 import {createHtmlElement} from 'dom-utils';
 import './time-picker.css';
-import './chevron-down.svg';
-import './chevron-up.svg';
+import chevronDown from './chevron-down.svg';
+import chevronUp from './chevron-up.svg';
 
 
 console.log("Executed from time-picker.js");
@@ -160,7 +160,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "up", "arrow" ],
                         properties: {
-                            src: "./chevron-up.svg",
+                            src: chevronUp,
                         },
                     }),
                     createHtmlElement({
@@ -175,7 +175,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "down", "arrow" ],
                         properties: {
-                            src: "./chevron-down.svg",
+                            src: chevronDown,
                         },
                     }),
                 ],
@@ -196,7 +196,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "up", "arrow" ],
                         properties: {
-                            src: "./chevron-up.svg",
+                            src: chevronUp,
                         },
                     }),
                     createHtmlElement({
@@ -210,7 +210,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "down", "arrow" ],
                         properties: {
-                            src: "./chevron-down.svg",
+                            src: chevronDown,
                         },
                     }),
                 ],
@@ -224,7 +224,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "up", "arrow" ],
                         properties: {
-                            src: "./chevron-up.svg",
+                            src: chevronUp,
                         },
                     }),
                     createHtmlElement({
@@ -238,7 +238,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "down", "arrow" ],
                         properties: {
-                            src: "./chevron-down.svg",
+                            src: chevronDown,
                         },
                     }),
                 ],  

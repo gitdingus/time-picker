@@ -23,7 +23,6 @@ module.exports = {
             {
                 test: /\.svg$/i,
                 type: 'asset/inline',
-                use: 'svgo-loader'
             }
         ]
 
