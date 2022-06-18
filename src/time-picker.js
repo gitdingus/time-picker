@@ -143,7 +143,7 @@ const TimePickerObject = function (){
         isValidMinute
     }
 }
-const createTimePicker = function (){
+export const createTimePicker = function (){
     const timePickerObj = TimePickerObject();
     const timePickerElement = createHtmlElement({
         tag: "div",
@@ -379,4 +379,3 @@ const createTimePicker = function (){
 };
 
 console.log("End of time-picker.js execution");
-export { createTimePicker };
