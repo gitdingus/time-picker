@@ -1,5 +1,14 @@
-var TimePicker;
-/******/ (() => { // webpackBootstrap
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else if(typeof exports === 'object')
+		exports["TimePicker"] = factory();
+	else
+		root["TimePicker"] = factory();
+})(self, () => {
+return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
@@ -546,6 +555,7 @@ __webpack_require__.r(__webpack_exports__);
 
 // EXPORTS
 __webpack_require__.d(__webpack_exports__, {
+  "createBullshitDiv": () => (/* binding */ createBullshitDiv),
   "createTimePicker": () => (/* binding */ createTimePicker)
 });
 
@@ -1044,6 +1054,16 @@ function createTimePicker(){
 
 };
 
+function createBullshitDiv(){
+    const bullshitDiv = createHtmlElement({
+        tag: "div",
+        properties: {
+            textContent: "Bullshit",
+        },
+    });
+
+    return bullshitDiv;
+}
 console.log("End of time-picker.js execution");
 
  
@@ -1051,6 +1071,7 @@ console.log("End of time-picker.js execution");
 
 })();
 
-TimePicker = __webpack_exports__;
+/******/ 	return __webpack_exports__;
 /******/ })()
 ;
+});

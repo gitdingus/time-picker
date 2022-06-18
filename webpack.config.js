@@ -4,6 +4,10 @@ module.exports = {
     mode: "production",
     entry: "./src/time-picker.js",
     output: {
+        library: {
+            name: "TimePicker",
+            type: "umd"
+        },
         filename: "time-picker.js",
         path: path.resolve(__dirname, "./dist"),
     },
