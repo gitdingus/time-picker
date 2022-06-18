@@ -493,18 +493,6 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/global */
-/******/ 	(() => {
-/******/ 		__webpack_require__.g = (function() {
-/******/ 			if (typeof globalThis === 'object') return globalThis;
-/******/ 			try {
-/******/ 				return this || new Function('return this')();
-/******/ 			} catch (e) {
-/******/ 				if (typeof window === 'object') return window;
-/******/ 			}
-/******/ 		})();
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -519,26 +507,6 @@ module.exports = styleTagTransform;
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/publicPath */
-/******/ 	(() => {
-/******/ 		var scriptUrl;
-/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
-/******/ 		var document = __webpack_require__.g.document;
-/******/ 		if (!scriptUrl && document) {
-/******/ 			if (document.currentScript)
-/******/ 				scriptUrl = document.currentScript.src
-/******/ 			if (!scriptUrl) {
-/******/ 				var scripts = document.getElementsByTagName("script");
-/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
-/******/ 			}
-/******/ 		}
-/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
-/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
-/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
-/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
-/******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/nonce */
@@ -669,10 +637,10 @@ var update = injectStylesIntoStyleTag_default()(time_picker/* default */.Z, opti
 
        /* harmony default export */ const src_time_picker = (time_picker/* default */.Z && time_picker/* default.locals */.Z.locals ? time_picker/* default.locals */.Z.locals : undefined);
 
-;// CONCATENATED MODULE: ./src/chevron-down.png
-const chevron_down_namespaceObject = __webpack_require__.p + "55df141ad408f10ca15e.png";
-;// CONCATENATED MODULE: ./src/chevron-up.png
-const chevron_up_namespaceObject = __webpack_require__.p + "646a2b0a9e82b9cd1751.png";
+;// CONCATENATED MODULE: ./src/chevron-down.svg
+const chevron_down_namespaceObject = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTcuNDEsOC41OEwxMiwxMy4xN0wxNi41OSw4LjU4TDE4LDEwTDEyLDE2TDYsMTBMNy40MSw4LjU4WiIgLz48L3N2Zz4=";
+;// CONCATENATED MODULE: ./src/chevron-up.svg
+const chevron_up_namespaceObject = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTcuNDEsMTUuNDFMMTIsMTAuODNMMTYuNTksMTUuNDFMMTgsMTRMMTIsOEw2LDE0TDcuNDEsMTUuNDFaIiAvPjwvc3ZnPg==";
 ;// CONCATENATED MODULE: ./src/time-picker.js
 
 
@@ -836,7 +804,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "up", "arrow" ],
                         properties: {
-                            src: "./chevron-up.png",
+                            src: "./chevron-up.svg",
                         },
                     }),
                     createHtmlElement({
@@ -851,7 +819,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "down", "arrow" ],
                         properties: {
-                            src: "./chevron-down.png",
+                            src: "./chevron-down.svg",
                         },
                     }),
                 ],
@@ -872,7 +840,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "up", "arrow" ],
                         properties: {
-                            src: "./chevron-up.png",
+                            src: "./chevron-up.svg",
                         },
                     }),
                     createHtmlElement({
@@ -886,7 +854,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "down", "arrow" ],
                         properties: {
-                            src: "./chevron-down.png",
+                            src: "./chevron-down.svg",
                         },
                     }),
                 ],
@@ -900,7 +868,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "up", "arrow" ],
                         properties: {
-                            src: "./chevron-up.png",
+                            src: "./chevron-up.svg",
                         },
                     }),
                     createHtmlElement({
@@ -914,7 +882,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "down", "arrow" ],
                         properties: {
-                            src: "./chevron-down.png",
+                            src: "./chevron-down.svg",
                         },
                     }),
                 ],  
