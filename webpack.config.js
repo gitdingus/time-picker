@@ -5,7 +5,6 @@ module.exports = {
     entry: "./src/time-picker.js",
     output: {
         library: {
-            name: "TimePicker",
             type: "umd"
         },
         filename: "time-picker.js",

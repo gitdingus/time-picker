@@ -3,10 +3,10 @@
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
-	else if(typeof exports === 'object')
-		exports["TimePicker"] = factory();
-	else
-		root["TimePicker"] = factory();
+	else {
+		var a = factory();
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
 })(self, () => {
 return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
@@ -28,7 +28,7 @@ return /******/ (() => { // webpackBootstrap
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".tick-tock{\n    width: 200px;\n}\n.time-picker{\n    display: grid;\n    grid-template-columns: 1fr 5px 1fr 1fr;\n\n    justify-items: center;\n    align-items: center;\n\n    padding: 5px;\n\n    border: 3px solid lightgray;\n    border-radius: 10px;\n\n    font-family: \"Roboto Mono\";\n    color: rgb(97, 119, 119);\n\n}\n\n.time-picker img{\n    opacity: .3;\n}\n\n.time-picker .picker {\n    display: grid;\n    grid-template-columns: 1fr;\n    \n    justify-items: center;\n    align-items: center;\n}\n\n.time-picker .picker div{\n    padding: 3px;\n    border-radius: 5px;\n}\n\n.picker.focused div{\n    background-color: lightgray;\n}\n\n.time-picker .arrow{\n    display: none; \n}\n\n.time-picker .arrow.active{\n    display: block;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ".time-picker{\n    display: grid;\n    grid-template-columns: 1fr 5px 1fr 1fr;\n\n    justify-items: center;\n    align-items: center;\n\n    width: 200px;\n\n    padding: 5px;\n\n    border: 3px solid lightgray;\n    border-radius: 10px;\n\n    font-family: \"Roboto Mono\";\n    color: rgb(97, 119, 119);\n\n}\n\n.time-picker img{\n    opacity: .3;\n}\n\n.time-picker .picker {\n    display: grid;\n    grid-template-columns: 1fr;\n    \n    justify-items: center;\n    align-items: center;\n}\n\n.time-picker .picker div{\n    padding: 3px;\n    border-radius: 5px;\n}\n\n.picker.focused div{\n    background-color: lightgray;\n}\n\n.time-picker .arrow{\n    display: none; \n}\n\n.time-picker .arrow.active{\n    display: block;\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

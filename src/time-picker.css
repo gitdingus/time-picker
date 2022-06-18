@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
-.tick-tock{
-    width: 200px;
-}
 .time-picker{
     display: grid;
     grid-template-columns: 1fr 5px 1fr 1fr;
 
     justify-items: center;
     align-items: center;
+
+    width: 200px;
 
     padding: 5px;
 
