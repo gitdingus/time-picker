@@ -378,7 +378,17 @@ function createTimePicker(){
 
 };
 
+function createBullshitDiv(){
+    const bullshitDiv = createHtmlElement({
+        tag: "div",
+        properties: {
+            textContent: "Bullshit",
+        },
+    });
+
+    return bullshitDiv;
+}
 console.log("End of time-picker.js execution");
 
-export {createTimePicker} ; 
+export {createTimePicker, createBullshitDiv} ; 
 
