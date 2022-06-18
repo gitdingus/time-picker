@@ -1,3 +1,4 @@
+var TimePicker;
 /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
@@ -500,6 +501,17 @@ module.exports = styleTagTransform;
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	(() => {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = (exports) => {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
 /******/ 		var scriptUrl;
@@ -529,8 +541,13 @@ module.exports = styleTagTransform;
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
 (() => {
+// ESM COMPAT FLAG
+__webpack_require__.r(__webpack_exports__);
 
-// UNUSED EXPORTS: createTimePicker
+// EXPORTS
+__webpack_require__.d(__webpack_exports__, {
+  "createTimePicker": () => (/* binding */ createTimePicker)
+});
 
 ;// CONCATENATED MODULE: ./node_modules/dom-utils/dom-utils.js
 // Returns an html element from an object.
@@ -553,7 +570,7 @@ var __webpack_exports__ = {};
 //
 // returns the newly created element
 console.log("dom-utils imported");
-function dom_utils_createHtmlElement(elementObject){
+function createHtmlElement(elementObject){
     //Must at least have a tag.
     if (typeof elementObject.tag !== 'string'){
         return
@@ -655,7 +672,7 @@ const chevron_up_namespaceObject = __webpack_require__.p + "646a2b0a9e82b9cd1751
 
 console.log("Executed from time-picker.js");
 document.querySelector("body").appendChild(
-    dom_utils_createHtmlElement({
+    createHtmlElement({
         tag: "p",
         properties: {
             textContent: "Hello From time-picker.js",
@@ -1034,5 +1051,6 @@ console.log("End of time-picker.js execution");
 
 })();
 
+TimePicker = __webpack_exports__;
 /******/ })()
 ;
