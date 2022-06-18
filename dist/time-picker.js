@@ -994,11 +994,11 @@ function createTimePicker(){
     
                     val = Number(val.substring(0, 1).padStart(2, '0'));
     
-                    if ( focused.id === "hour-picker" ){
+                    if ( focused.classList.contains("hour-picker") ){
                         timePickerObj.setHour(val);
                         displayHour(focused);
                     }
-                    else if ( focused.id === "minute-picker" ){
+                    else if ( focused.classList.contains("minute-picker") ){
                         timePickerObj.setMinute(val);
                         displayMinute(focused);
                     }
