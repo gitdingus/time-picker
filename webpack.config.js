@@ -22,7 +22,7 @@ module.exports = {
 
             {
                 test: /\.png$/i,
-                type: 'asset/resource',
+                type: 'asset/inline',
 
             }
         ]
