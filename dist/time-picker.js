@@ -638,9 +638,9 @@ var update = injectStylesIntoStyleTag_default()(time_picker/* default */.Z, opti
        /* harmony default export */ const src_time_picker = (time_picker/* default */.Z && time_picker/* default.locals */.Z.locals ? time_picker/* default.locals */.Z.locals : undefined);
 
 ;// CONCATENATED MODULE: ./src/chevron-down.svg
-const chevron_down_namespaceObject = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTcuNDEgOC41OCAxMiAxMy4xN2w0LjU5LTQuNTlMMTggMTBsLTYgNi02LTYgMS40MS0xLjQyWiIvPjwvc3ZnPg==";
+const chevron_down_namespaceObject = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTcuNDEsOC41OEwxMiwxMy4xN0wxNi41OSw4LjU4TDE4LDEwTDEyLDE2TDYsMTBMNy40MSw4LjU4WiIgLz48L3N2Zz4=";
 ;// CONCATENATED MODULE: ./src/chevron-up.svg
-const chevron_up_namespaceObject = "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCI+PHBhdGggZD0iTTcuNDEgMTUuNDEgMTIgMTAuODNsNC41OSA0LjU4TDE4IDE0bC02LTYtNiA2IDEuNDEgMS40MVoiLz48L3N2Zz4=";
+const chevron_up_namespaceObject = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTcuNDEsMTUuNDFMMTIsMTAuODNMMTYuNTksMTUuNDFMMTgsMTRMMTIsOEw2LDE0TDcuNDEsMTUuNDFaIiAvPjwvc3ZnPg==";
 ;// CONCATENATED MODULE: ./src/time-picker.js
 
 
@@ -804,7 +804,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "up", "arrow" ],
                         properties: {
-                            src: "./chevron-up.svg",
+                            src: chevron_up_namespaceObject,
                         },
                     }),
                     createHtmlElement({
@@ -819,7 +819,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "down", "arrow" ],
                         properties: {
-                            src: "./chevron-down.svg",
+                            src: chevron_down_namespaceObject,
                         },
                     }),
                 ],
@@ -840,7 +840,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "up", "arrow" ],
                         properties: {
-                            src: "./chevron-up.svg",
+                            src: chevron_up_namespaceObject,
                         },
                     }),
                     createHtmlElement({
@@ -854,7 +854,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "down", "arrow" ],
                         properties: {
-                            src: "./chevron-down.svg",
+                            src: chevron_down_namespaceObject,
                         },
                     }),
                 ],
@@ -868,7 +868,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "up", "arrow" ],
                         properties: {
-                            src: "./chevron-up.svg",
+                            src: chevron_up_namespaceObject,
                         },
                     }),
                     createHtmlElement({
@@ -882,7 +882,7 @@ function createTimePicker(){
                         tag: "img",
                         classes: [ "down", "arrow" ],
                         properties: {
-                            src: "./chevron-down.svg",
+                            src: chevron_down_namespaceObject,
                         },
                     }),
                 ],  
