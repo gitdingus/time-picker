@@ -143,7 +143,7 @@ const TimePickerObject = function (){
         isValidMinute
     }
 }
-export const createTimePicker = function (){
+export function createTimePicker (){
     const timePickerObj = TimePickerObject();
     const timePickerElement = createHtmlElement({
         tag: "div",
