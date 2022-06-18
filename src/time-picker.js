@@ -13,7 +13,7 @@ document.querySelector("body").appendChild(
         }
     })
 );
-const TimePickerObject = function (){
+function TimePickerObject (){
     let hour = 0;
     let minute = 0;
     let amPm = "AM"
@@ -143,7 +143,7 @@ const TimePickerObject = function (){
         isValidMinute
     }
 }
-const createTimePicker = function (){
+function createTimePicker(){
     const timePickerObj = TimePickerObject();
     const timePickerElement = createHtmlElement({
         tag: "div",
@@ -381,3 +381,4 @@ const createTimePicker = function (){
 console.log("End of time-picker.js execution");
 
 export {createTimePicker} ; 
+
