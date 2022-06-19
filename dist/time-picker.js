@@ -647,16 +647,6 @@ const chevron_up_namespaceObject = "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj
 
 
 
-
-console.log("Executed from time-picker.js");
-document.querySelector("body").appendChild(
-    createHtmlElement({
-        tag: "p",
-        properties: {
-            textContent: "Hello From time-picker.js",
-        }
-    })
-);
 function TimePickerObject (){
     let hour = 0;
     let minute = 0;
@@ -1032,7 +1022,6 @@ function createBullshitDiv(){
 
     return bullshitDiv;
 }
-console.log("End of time-picker.js execution");
 
  
 
