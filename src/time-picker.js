@@ -3,16 +3,6 @@ import './time-picker.css';
 import chevronDown from './chevron-down.svg';
 import chevronUp from './chevron-up.svg';
 
-
-console.log("Executed from time-picker.js");
-document.querySelector("body").appendChild(
-    createHtmlElement({
-        tag: "p",
-        properties: {
-            textContent: "Hello From time-picker.js",
-        }
-    })
-);
 function TimePickerObject (){
     let hour = 0;
     let minute = 0;
@@ -388,7 +378,6 @@ function createBullshitDiv(){
 
     return bullshitDiv;
 }
-console.log("End of time-picker.js execution");
 
 export {createTimePicker, createBullshitDiv} ; 
 
